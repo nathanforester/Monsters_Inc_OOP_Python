@@ -3,9 +3,9 @@ from monsters import *
 
 class Course(Monster):
 
-    def __init__(self, list_of_students=[], module_name='', start_date=''):
-        super().__init__('', '', '')
-        self.__list_of_students = list_of_students
+    def __init__(self, module_name, start_date, list_of_students=[]):
+        super().__init__(name='', tax_number='', fur='')
+        self.list_of_students = list_of_students
         self.__module_name = module_name
         self.__start_date = start_date
 
@@ -17,30 +17,21 @@ class Course(Monster):
 
     def create_module_name(self, new_module_name):
         self.__module_name = new_module_name
-        new_module_name = input('enter a course: ')
         return new_module_name
 
-    def create_start_date(self, new_start_date):
+    def create_start_date(self, new_start_date, new_module_name):
         self.__start_date = new_start_date
-        new_start_date = input('enter a start date: ')
-        return new_start_date
+        return new_start_date + new_module_name
 
-# <<<<<<< HEAD
-#     # def append_list_of_students(self, new_student, new_module_name):
-#     #     self.__list_of_students = new_student
-#     #     new_student = Monster()
-#     #     new_student.get_name()
-#     #     new_list = []
-#     #     for new_student in new_list:
-#     #         new_list.append(new_student)
-#     #         return new_list + new_module_name
-# =======
-#     def append_list_of_students(self, new_student, new_module_name):
-#         self.__list_of_students = new_student
-#         new_student = Monster()
-#         new_student.get_name()
-#         new_list = []
-#         for new_student in new_list:
-#             new_list.append(new_student)
-#             return new_list + new_module_name
-# >>>>>>> 575ef60966b248f2da61214e9c39703ac753ed39
+    def get_list_of_students(self, student):
+        return self.__list_of_students.append(student)
+
+    def get_student(self):
+        return ', '.join(self.__get_names())
+
+    def __get_names(self):
+        all_students = []
+        for student in self.list_of_students:
+            all_students.append(student.get_name())
+        return all_students
+

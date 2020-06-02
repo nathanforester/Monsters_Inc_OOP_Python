@@ -1,6 +1,3 @@
-# name
-# tax_number
-# fur
 
 class Monster:
 
@@ -14,7 +11,6 @@ class Monster:
 
     def create_name(self, new_name):
         self.__name = new_name
-        new_name = input('enter a name: ')
         return new_name
 
     def get_tax_number(self):
@@ -22,7 +18,6 @@ class Monster:
 
     def tax_number(self, new_tax_number, new_name):
         self.__tax_number = new_tax_number
-        new_tax_number = input('enter tax number: ')
         return new_tax_number + new_name
 
 
