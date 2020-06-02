@@ -11,6 +11,10 @@ class StudentMonster(Monster):
 
     def get_student_number(self):
         return self.__student_number
+    
+    def set_student_number(self, new_student_number):
+        self.__student_number = new_student_number
+        return new_student_number
 
     def set_student_number(self, new_student_number):
         self.__student_number = new_student_number

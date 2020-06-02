@@ -25,6 +25,7 @@ class Course(Monster):
         new_start_date = input('enter a start date: ')
         return new_start_date
 
+<<<<<<< HEAD
     # def append_list_of_students(self, new_student, new_module_name):
     #     self.__list_of_students = new_student
     #     new_student = Monster()
@@ -33,3 +34,13 @@ class Course(Monster):
     #     for new_student in new_list:
     #         new_list.append(new_student)
     #         return new_list + new_module_name
+=======
+#     def append_list_of_students(self, new_student, new_module_name):
+#         self.__list_of_students = new_student
+#         new_student = Monster()
+#         new_student.get_name()
+#         new_list = []
+#         for new_student in new_list:
+#             new_list.append(new_student)
+#             return new_list + new_module_name
+>>>>>>> 575ef60966b248f2da61214e9c39703ac753ed39
