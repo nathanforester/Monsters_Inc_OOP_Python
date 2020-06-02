@@ -4,10 +4,13 @@ from monsters import *
 
 class StudentMonster(Monster):
 
-    def __init__(self, name, tax_number, student_number, skill_list=[]):
+    def __init__(self, name, tax_number, student_number, skill_list=None):
         super().__init__(name=name, tax_number=tax_number, fur='')
         self.__student_number = student_number
+        if skill_list is None:
+            skill_list = []
         self.__skill_list = skill_list
+
 
     def get_student_number(self):
         return self.__student_number
