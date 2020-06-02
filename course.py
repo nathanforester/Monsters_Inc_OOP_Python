@@ -24,7 +24,7 @@ class Course(Monster):
         return new_start_date + new_module_name
 
     def get_list_of_students(self, student):
-        return self.__list_of_students.append(student)
+        return self.list_of_students.append(student)
 
     def get_student(self):
         return ', '.join(self.__get_names())

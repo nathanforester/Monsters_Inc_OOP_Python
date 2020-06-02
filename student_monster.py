@@ -11,7 +11,6 @@ class StudentMonster(Monster):
             skill_list = []
         self.__skill_list = skill_list
 
-
     def get_student_number(self):
         return self.__student_number
 
