@@ -5,16 +5,12 @@ from monsters import *
 class StudentMonster(Monster):
 
     def __init__(self, student_number, skill_list):
-        super().__init__(self, tax_number=student_number, fur='')
+        super().__init__(name='', tax_number=student_number, fur='')
         self.__student_number = student_number
         self.__skill_list = skill_list
 
     def get_student_number(self):
         return self.__student_number
-    
-    def set_student_number(self, new_student_number):
-        self.__student_number = new_student_number
-        return new_student_number
 
     def set_student_number(self, new_student_number):
         self.__student_number = new_student_number
