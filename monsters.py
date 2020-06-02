@@ -19,6 +19,10 @@ class Monster:
     def tax_number(self, new_tax_number, new_name):
         self.__tax_number = new_tax_number
         return new_tax_number + new_name
+    
+    def set_fur(self, fur):
+        fur = input('enter fur colour/status: ')
+        return fur
 
 
 
