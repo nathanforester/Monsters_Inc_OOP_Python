@@ -20,10 +20,10 @@ class Monster:
     def get_tax_number(self):
         return self.__tax_number
 
-    def tax_number(self, new_tax_number):
+    def tax_number(self, new_tax_number, new_name):
         self.__tax_number = new_tax_number
         new_tax_number = input('enter tax number: ')
-        return new_tax_number
+        return new_tax_number + new_name
 
 
 
